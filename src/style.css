@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Inter:wght@400;600;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+body{
+    padding: 2rem 3rem;
+    font-family: "karla";
+    background-color: #BAFFAC;
+    color: #293264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2rem;
+    text-align: center;
+    width: 40rem;
+    height: 35rem;
+    background-color: #F5F7FB;
+    border-radius: 10px;
+}
+
+button{
+    background: #4D5B9E;
+    border-radius: 15px;
+    padding: 1.2rem 3rem;
+    border-style: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #F5F7FB;
+
+    cursor: pointer;
+}
+
+.reception_text{
+    color: #293264;
+    padding-bottom: 1.15rem;
+}
+
+.reception_text h1{
+    font-family: "karla";
+    font-style: normal;
+    font-weight: 700;
+}
+
+.reception_text h3{
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* .reception-off{
+    color: aqua;
+} */
