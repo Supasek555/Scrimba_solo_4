@@ -3,7 +3,7 @@
 body{
     padding: 2rem 3rem;
     font-family: "karla";
-    background-color: #BAFFAC;
+    background-color: #4D5B9E;
     color: #293264;
     display: flex;
     justify-content: center;
@@ -56,6 +56,15 @@ button{
     font-weight: 400;
 }
 
-/* .reception-off{
-    color: aqua;
-} */
+.reception-off{
+    display: none;
+}
+
+
+.quiz-off{
+    display: none;
+}
+
+.quiz-show{
+
+}
