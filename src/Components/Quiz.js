@@ -1,18 +1,26 @@
 import React from "react"
+import QuizElement from "./QuizElement"
 
 export default function Quiz(props){
 
-
     
+    const quizElement = props.quizList.map(myQuiz => (
+        
+        <QuizElement quizQuestion ={myQuiz.question} />
+    ))
 
 
     return(
         
     
     
-    <div className={props.displayed ? "quiz-show" : "quiz-off"}>
-        <h1>Jum Reap Suo</h1>
-        <button>Check Answer</button>
+    <div className="quiz-show">
+        
+       
+        {quizElement}
+
+
+        <button className="normal">Check Answer</button>
     </div>
     
     

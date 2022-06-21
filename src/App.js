@@ -18,7 +18,7 @@ export default function App(){
         .then(res => res.json())
         .then(data => setQuiz(data.results))
 
-         console.log(JSON.stringify(quiz[0]))
+         console.log(quiz)
         },[isPlayed])
 
         
@@ -26,7 +26,7 @@ export default function App(){
   function play(){
     setIsPlayed(!isPlayed)
 
-    console.log(isPlayed)
+    // console.log(isPlayed)
   }
 
 
@@ -38,15 +38,15 @@ export default function App(){
 
         <div className={isPlayed ? "reception-off" : "reception"} >
           <div className="reception_text">
-            <h1>Jum Reap Suo</h1>
+            <h1>Quizzical</h1>
             <h3>Mian Soup Hei?</h3>
           </div>
          
 
-          <button onClick={play}>Start Quiz</button>
+          <button onClick={play} className="normal">Start Quiz</button>
         </div>
 
-        <Quiz displayed={isPlayed}/>
+        {isPlayed && <Quiz quizList={quiz}/>}
         
       
       

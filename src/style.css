@@ -17,12 +17,20 @@ body{
     padding: 2rem;
     text-align: center;
     width: 40rem;
-    height: 35rem;
+    height: 100%;
     background-color: #F5F7FB;
     border-radius: 10px;
 }
 
-button{
+.reception{
+    height: 35rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button.normal{
     background: #4D5B9E;
     border-radius: 15px;
     padding: 1.2rem 3rem;
@@ -61,10 +69,44 @@ button{
 }
 
 
-.quiz-off{
-    display: none;
-}
+
 
 .quiz-show{
+    height: 100%;
+    width: 70%;
+}
+
+.quiz_el{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    text-align: left;
+}
+
+button.answer{
+    background: #F5F7FB;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 12px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #293264;
+
+    border: 0.794239px solid #4D5B9E;
+    border-radius: 7.94239px;
+
+    padding: 0.3rem 1.8rem;
+
+}
+
+.answer_grp{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: solid 2px #DBDEF0;
 
 }
